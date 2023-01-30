@@ -111,18 +111,25 @@ a {
 }
 
 .about {
+  height: 100vh;
   &__box::after {
-    // content: '';
-    // position: absolute;
-    // width: 100%;
-    // top: 0;
-    // height: 100vh;
-    // background-image: url('https://wallpaperaccess.com/full/1120034.jpg');
   }
   &__inner {
     padding-top: 150px;
     font-size: 30px;
     font-family: $font-family3;
+    position: relative;
+  }
+  &__inner::after {
+    content: '';
+    width: 30%;
+    height: 60px;
+    bottom: -150px;
+    right: -100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url(../assets/mwl.jpg);
+    position: absolute;
   }
   &__text {
     margin-bottom: 20px;

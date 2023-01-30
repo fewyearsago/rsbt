@@ -10,9 +10,7 @@ const Header = () => {
           <Menu />
           <div className="logo">
             <img className="logo-img" src={logoImg} alt="" />
-            <a className="logo__link" href="#">
-              rosebotanique
-            </a>
+            <h1>rosebotanique</h1>
             <span className="logo-store">store</span>
           </div>
         </div>

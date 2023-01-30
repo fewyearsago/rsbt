@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useSpring, animated } from '@react-spring/web';
 
 const Menu = () => {
   return (
