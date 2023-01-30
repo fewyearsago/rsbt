@@ -1,22 +1,13 @@
 import React from 'react';
 import logoImg from '../assets/flower.png';
+import Menu from './Menu';
 
 const Header = () => {
   return (
     <div className="header">
       <div className="container">
         <div className="header__inner">
-          <ul className="menu__list">
-            <a className="menu__list-item" href="#">
-              <li className="menu__list-link">галерея</li>
-            </a>
-            <a className="menu__list-item" href="#">
-              <li className="menu__list-link">о нас</li>
-            </a>
-            <a className="menu__list-item" href="#">
-              <li className="menu__list-link">каталог</li>
-            </a>
-          </ul>
+          <Menu />
           <div className="logo">
             <img className="logo-img" src={logoImg} alt="" />
             <a className="logo__link" href="#">
