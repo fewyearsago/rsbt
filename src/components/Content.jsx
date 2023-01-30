@@ -6,9 +6,7 @@ const Content = () => {
   const [items, setItems] = React.useState();
   React.useEffect(() => {
     const fetchItems = async () => {
-      const { data } = await axios.get(
-        'https://63d67fe7e60d57436979ced9.mockapi.io/items',
-      );
+      const { data } = await axios.get('https://63d67fe7e60d57436979ced9.mockapi.io/items');
       setItems(data);
     };
     fetchItems();
@@ -18,9 +16,12 @@ const Content = () => {
   }
   return (
     <div className="content">
-      {items.map((elem, index) => {
-        return <Item key={index} url={elem.avatar} />;
-      })}
+      <h1 className="content-title">...</h1>
+      <div className="content-wrapper">
+        {items.map((elem, index) => {
+          return <Item key={index} url={elem.avatar} />;
+        })}
+      </div>
     </div>
   );
 };

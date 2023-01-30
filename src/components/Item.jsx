@@ -2,9 +2,11 @@ import React from 'react';
 
 const Item = ({ url }) => {
   return (
-    <div className="content-item">
-      <img className="content-item-img" src={url} alt="" />
-    </div>
+    <>
+      <div className="content-wrapper-item">
+        <img className="content-wrapper-item-img" src={url} alt="" />
+      </div>
+    </>
   );
 };
 
