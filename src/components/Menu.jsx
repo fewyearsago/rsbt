@@ -4,19 +4,17 @@ import { useSpring, animated } from '@react-spring/web';
 
 const Menu = () => {
   return (
-    <div>
-      <ul className="menu__list">
-        <Link to={''} className="menu__list-item" href="#">
-          <li className="menu__list-link">галерея</li>
-        </Link>
-        <Link to={'/about'} className="menu__list-item" href="#">
-          <li className="menu__list-link">о нас</li>
-        </Link>
-        <Link to={'/catalog'} className="menu__list-item" href="#">
-          <li className="menu__list-link">каталог</li>
-        </Link>
-      </ul>
-    </div>
+    <ul className="menu__list">
+      <Link to={'/'} className="menu__list-item" href="#">
+        <li className="menu__list-link">галерея</li>
+      </Link>
+      <Link to={'/about'} className="menu__list-item" href="#">
+        <li className="menu__list-link">о нас</li>
+      </Link>
+      <Link to={'/catalog'} className="menu__list-item" href="#">
+        <li className="menu__list-link">каталог</li>
+      </Link>
+    </ul>
   );
 };
 

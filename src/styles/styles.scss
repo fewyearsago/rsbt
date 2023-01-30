@@ -5,6 +5,10 @@
 $font-family1: 'Draconian Typewriter', sans-serif;
 $font-family2: 'Special Elite';
 $font-family3: 'Gothic A1', sans-serif;
+
+body {
+  box-sizing: border-box;
+}
 a {
   text-decoration: none;
   color: inherit;
@@ -30,7 +34,6 @@ a {
 }
 
 .menu__list {
-  display: flex;
   padding: 40px 0;
   justify-content: center;
   text-transform: uppercase;
@@ -108,7 +111,6 @@ a {
 }
 
 .about {
-  text-align: center;
   &__box::after {
     // content: '';
     // position: absolute;
@@ -117,10 +119,15 @@ a {
     // height: 100vh;
     // background-image: url('https://wallpaperaccess.com/full/1120034.jpg');
   }
+  &__inner {
+    padding-top: 150px;
+    font-size: 30px;
+    font-family: $font-family3;
+  }
   &__text {
-    display: flex;
-    justify-content: center;
-    border: 1px solid #000;
+    margin-bottom: 20px;
+    letter-spacing: 5px;
+    line-height: 35px;
   }
 }
 
