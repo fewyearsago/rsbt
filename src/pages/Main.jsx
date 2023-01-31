@@ -1,4 +1,5 @@
 import React from 'react';
+import AnimatedPage from '../components/AnimatedPage';
 import Content from '../components/Content';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
@@ -6,7 +7,9 @@ import Header from '../components/Header';
 const Index = () => {
   return (
     <>
-      <Header />
+      <AnimatedPage>
+        <Header />
+      </AnimatedPage>
       <Content />
       <Footer />
     </>

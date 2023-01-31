@@ -2,25 +2,21 @@ import './styles/styles.scss';
 import './styles/reset.css';
 import Main from './pages/Main';
 import About from './pages/About';
-import { Routes, Route } from 'react-router-dom';
-import { animated, useSpring } from '@react-spring/web';
+import { Routes, Route, useLocation } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
+import Catalog from './pages/Catalog';
 
 function App() {
-  const [props, api] = useSpring(
-    () => ({
-      from: { opacity: 0 },
-      to: { opacity: 1 },
-    }),
-    [],
-  );
+  const location = useLocation();
   return (
     <div className="App">
-      <animated.div style={props}>
-        <Routes>
+      <AnimatePresence exitBeforeEnter>
+        <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Main />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/catalog" element={<Catalog />}></Route>
         </Routes>
-      </animated.div>
+      </AnimatePresence>
     </div>
   );
 }

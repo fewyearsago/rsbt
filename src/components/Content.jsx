@@ -1,7 +1,6 @@
 import axios from 'axios';
 import React from 'react';
 import Item from './Item';
-import contentGif from '../assets/giphy.gif';
 
 const Content = () => {
   const [items, setItems] = React.useState();
