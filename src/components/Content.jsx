@@ -19,7 +19,7 @@ const Content = () => {
 
   return (
     <div className="content">
-      <h1 className="content-title">our works</h1>
+      <h1 className="content-title">работы</h1>
       <div className="content-wrapper">
         {isLoading
           ? [...new Array(3)].map((_, index) => <Skeleton key={index} />)
