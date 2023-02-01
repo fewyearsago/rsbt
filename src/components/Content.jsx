@@ -9,9 +9,7 @@ const Content = () => {
   React.useEffect(() => {
     const fetchItems = async () => {
       try {
-        const { data } = await axios.get(
-          'https://63d67fe7e60d57436979ced9.mockapi.io/items',
-        );
+        const { data } = await axios.get('https://63d67fe7e60d57436979ced9.mockapi.io/items');
         setItems(data);
         setLoading(false);
       } catch {
@@ -23,10 +21,9 @@ const Content = () => {
 
   return (
     <div className="content">
-      <h1 className="content-title">работы</h1>
       <div className="content-wrapper">
         {isLoading
-          ? [...new Array(6)].map((_, index) => <Skeleton key={index} />)
+          ? [...new Array(8)].map((_, index) => <Skeleton key={index} />)
           : items.map((elem, index) => <Item key={index} url={elem.avatar} />)}
       </div>
     </div>
