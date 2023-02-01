@@ -1,18 +1,19 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
+  const list = [
+    { name: 'галерея', href: '/' },
+    { name: 'о нас', href: '/about' },
+    { name: 'каталог', href: '/catalog' },
+  ];
   return (
     <ul className="menu__list">
-      <Link to={'/'} className="menu__list-item" href="#">
-        <li className="menu__list-link">галерея</li>
-      </Link>
-      <Link to={'/about'} className="menu__list-item" href="#">
-        <li className="menu__list-link">о нас</li>
-      </Link>
-      <Link to={'/catalog'} className="menu__list-item" href="#">
-        <li className="menu__list-link">каталог</li>
-      </Link>
+      {list.map((obj) => (
+        <NavLink to={obj.href} className="menu__list-item">
+          <li className="menu__list-link">{obj.name}</li>
+        </NavLink>
+      ))}
     </ul>
   );
 };
