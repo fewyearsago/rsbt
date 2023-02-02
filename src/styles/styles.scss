@@ -118,7 +118,7 @@ a {
     &-item {
       overflow: hidden;
       min-height: 100%;
-
+      box-shadow: 0 0 15px rgb(0 0 0 / 20%);
       &:nth-child(6) {
         border-radius: 20px;
       }
