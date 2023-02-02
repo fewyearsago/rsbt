@@ -9,11 +9,13 @@ const Content = () => {
   React.useEffect(() => {
     const fetchItems = async () => {
       try {
-        const { data } = await axios.get('https://63d67fe7e60d57436979ced9.mockapi.io/items');
+        const { data } = await axios.get(
+          'https://63d67fe7e60d57436979ced9.mockapi.io/items',
+        );
         setItems(data);
         setLoading(false);
       } catch {
-        alert('Произошла ошибка, попробуйте поз');
+        alert('Произошла ошибка, попробуйте позже');
       }
     };
     fetchItems();

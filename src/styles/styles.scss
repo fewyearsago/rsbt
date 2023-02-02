@@ -15,7 +15,7 @@ $color1: rgb(129, 185, 129);
 
 body {
   box-sizing: border-box;
-  background-color: #fcfcf8;
+  background-color: #fffff7;
 }
 
 a {
@@ -29,6 +29,20 @@ a {
   text-transform: uppercase;
   width: 100%;
   height: 100vh;
+  z-index: 100;
+  position: relative;
+}
+.header::before {
+  height: 100vh;
+  position: absolute;
+  width: 100%;
+  opacity: 0.8;
+  top: 0;
+  left: 0;
+  content: '';
+  background-position: center;
+  background-size: cover;
+  background-image: url('https://d.radikal.host/2023/02/03/290024511_173111291861811_6834651775604104610_n.jpg');
 }
 
 .container {
@@ -47,6 +61,7 @@ a {
   justify-content: center;
   text-transform: uppercase;
   font-family: $font-family3;
+  position: relative;
   align-items: center;
   font-size: 18px;
   display: flex;
