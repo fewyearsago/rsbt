@@ -6,7 +6,7 @@ const Contacts = () => {
   return (
     <AnimatedPage>
       <Menu />
-      <div>Contacts</div>
+      <div className="contacts">Contacts</div>
     </AnimatedPage>
   );
 };

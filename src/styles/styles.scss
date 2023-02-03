@@ -49,6 +49,7 @@ a {
 .container {
   max-width: 1000px;
   margin: 0 auto;
+  min-height: 100%;
 }
 
 .header__inner {
@@ -122,12 +123,6 @@ a {
       overflow: hidden;
       min-height: 100%;
       box-shadow: 0 0 15px rgb(0 0 0 / 20%);
-<<<<<<< HEAD
-      &:nth-child(6) {
-        border-radius: 20px;
-      }
-=======
->>>>>>> 815f8fab473ece93b44b84de2bfe56e9cdab32ee
       &-img {
         object-fit: cover;
         object-position: top;
@@ -153,10 +148,10 @@ a {
 .about {
   height: 100vh;
   &__inner {
-    padding-top: 150px;
     font-size: 30px;
     font-family: $font-family3;
     position: relative;
+    padding-top: 120px;
   }
   &__inner::after {
     content: '';
@@ -174,6 +169,9 @@ a {
     letter-spacing: 5px;
     line-height: 35px;
   }
+}
+
+.contacts {
 }
 
 .footer {
