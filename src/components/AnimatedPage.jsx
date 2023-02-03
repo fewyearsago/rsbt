@@ -11,7 +11,7 @@ const AnimatedPage = ({ children }) => {
     <motion.div
       animate="animate"
       exit="exit"
-      transition={{ duration: 0.8 }}
+      transition={{ duration: 0.75 }}
       initial="initial"
       variants={animations}>
       {children}
