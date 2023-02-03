@@ -5,16 +5,18 @@ import About from './pages/About';
 import { Routes, Route, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion';
 import Catalog from './pages/Catalog';
+import Contacts from './pages/Contacts';
 
 function App() {
   const location = useLocation();
   return (
     <div className="App">
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence mode="wait">
         <Routes key={location.pathname} location={location}>
           <Route path="/" element={<Main />}></Route>
           <Route path="/about" element={<About />}></Route>
           <Route path="/catalog" element={<Catalog />}></Route>
+          <Route path="/contacts" element={<Contacts />}></Route>
         </Routes>
       </AnimatePresence>
     </div>
