@@ -28,6 +28,7 @@ a {
   color: #000;
   text-transform: uppercase;
   width: 100%;
+  padding-bottom: 150px;
   height: 100vh;
   z-index: 100;
   position: relative;
@@ -101,6 +102,7 @@ a {
 
 // #Content
 .content {
+  border-top: 1px solid rgb(240, 211, 211);
   padding: 100px 150px 200px 150px;
   &-title {
     text-align: center;
