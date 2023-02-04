@@ -196,8 +196,10 @@ a {
   &__title {
     font-family: $font-family6;
     letter-spacing: 1px;
-    margin-bottom: 40px;
     font-size: 32px;
+  }
+  &__svg {
+    margin: 7px auto;
   }
 }
 
