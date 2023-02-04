@@ -5,7 +5,6 @@ const Footer = () => {
     <div className="footer">
       <div className="container">
         <div className="footer__inner">
-          <div className="footer__title">rosebotanique</div>
           <div className="footer__item">
             <a className="footer__inner-link" href="#">
               <svg

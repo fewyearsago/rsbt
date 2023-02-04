@@ -2,11 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
 
 $font-family1: 'Draconian Typewriter', sans-serif;
 $font-family2: 'Special Elite';
 $font-family3: 'Gothic A1', sans-serif;
 $font-family4: 'Ubuntu', sans-serif;
+$font-family5: 'Abel', sans-serif;
+$font-family6: 'Merriweather', serif;
 $color1: rgb(129, 185, 129);
 
 *::selection {
@@ -15,7 +19,7 @@ $color1: rgb(129, 185, 129);
 
 body {
   box-sizing: border-box;
-  background-color: #fffff7;
+  background-color: #e8e4e1;
 }
 
 a {
@@ -72,7 +76,7 @@ a {
     text-decoration: underline;
   }
   &-item + &-item {
-    margin-left: 20px;
+    margin-left: 60px;
   }
 }
 
@@ -148,7 +152,7 @@ a {
 .about {
   height: 100vh;
   &__inner {
-    font-size: 30px;
+    font-size: 24px;
     font-family: $font-family3;
     position: relative;
     padding-top: 120px;
@@ -171,12 +175,30 @@ a {
   }
   &__text {
     margin-bottom: 20px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
     line-height: 35px;
   }
 }
 
 .contacts {
+  display: grid;
+  place-items: center;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding: 200px 0 380px 0;
+    text-align: center;
+  }
+  &__link {
+    font-size: 26px;
+    font-family: $font-family5;
+  }
+  &__title {
+    font-family: $font-family6;
+    letter-spacing: 1px;
+    margin-bottom: 40px;
+    font-size: 32px;
+  }
 }
 
 .footer {
@@ -197,7 +219,7 @@ a {
     font-size: 26px;
     padding-top: 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 
     & svg {
       width: 30px;

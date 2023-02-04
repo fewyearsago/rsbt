@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 const Menu = () => {
   const list = [
-    { name: 'галерея', href: '/' },
-    { name: 'о нас', href: '/about' },
+    { name: 'главная', href: '/' },
+    { name: 'о бренде', href: '/about' },
     { name: 'каталог', href: '/catalog' },
     { name: 'контакты', href: '/contacts' },
   ];
