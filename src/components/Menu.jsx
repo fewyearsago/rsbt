@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 const Menu = () => {
   const list = [
     { name: 'главная', href: '/' },
-    { name: 'о бренде', href: '/about' },
     { name: 'каталог', href: '/catalog' },
     { name: 'контакты', href: '/contacts' },
+    { name: 'о бренде', href: '/about' },
   ];
   return (
     <ul className="menu__list">
