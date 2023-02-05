@@ -10,7 +10,7 @@ const Footer = () => {
               className="footer__inner-link"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://t.me/rosebotaniquestore">
+              href="https://t.me/rsbtnqstore">
               <svg
                 fill="#000000"
                 width="800px"
