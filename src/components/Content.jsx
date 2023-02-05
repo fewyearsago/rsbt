@@ -8,11 +8,11 @@ const Content = () => {
   const [items, setItems] = React.useState();
   const [isLoading, setLoading] = React.useState(true);
   React.useEffect(() => {
-    const fetchItems = () => {
-      setLoading(false);
+    const getItems = () => {
       setItems(Json.map((e) => e));
+      setLoading(false);
     };
-    fetchItems();
+    getItems();
   }, []);
 
   return (
@@ -20,7 +20,7 @@ const Content = () => {
       <div className="content-wrapper">
         {isLoading
           ? [...new Array(8)].map((_, index) => <Skeleton key={index} />)
-          : items.map((elem, index) => <Item key={index} url={elem.avatar} />)}
+          : items.map((elem, index) => <Item key={index} url={elem.imageUrl} />)}
       </div>
     </div>
   );
