@@ -39,8 +39,8 @@ const Contacts = () => {
             Telegram
           </a>
         </div>
-        <Footer />
       </div>
+      <Footer />
     </AnimatedPage>
   );
 };
