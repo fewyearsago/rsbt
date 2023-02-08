@@ -1,4 +1,3 @@
-import axios from 'axios';
 import React from 'react';
 import Item from './Item';
 import Skeleton from './skeleton';
@@ -20,7 +19,9 @@ const Content = () => {
       <div className="content-wrapper">
         {isLoading
           ? [...new Array(8)].map((_, index) => <Skeleton key={index} />)
-          : items.map((elem, index) => <Item key={index} url={elem.imageUrl} />)}
+          : items.map((elem, index) => (
+              <Item key={index} url={elem.imageUrl} />
+            ))}
       </div>
     </div>
   );
