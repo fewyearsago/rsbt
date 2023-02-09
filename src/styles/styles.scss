@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
 
 $font-family1: 'Draconian Typewriter', sans-serif;
 $font-family2: 'Special Elite';
@@ -11,6 +12,7 @@ $font-family3: 'Gothic A1', sans-serif;
 $font-family4: 'Ubuntu', sans-serif;
 $font-family5: 'Abel', sans-serif;
 $font-family6: 'Merriweather', serif;
+$font-family7: 'Montserrat', sans-serif;
 $color1: rgb(129, 185, 129);
 
 *::selection {
@@ -285,6 +287,7 @@ a {
     &-item {
       max-height: 100%;
       box-shadow: 0 0 15px rgb(0 0 0 / 20%);
+      padding-bottom: 5px;
       cursor: pointer;
       &-img {
         object-fit: cover;
@@ -310,4 +313,45 @@ a {
       }
     }
   }
+}
+
+.fullItem {
+  max-width: 900px;
+  padding-top: 20px;
+  margin: 0 auto;
+  &__img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    object-position: top;
+  }
+  &__list {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__info {
+    width: 450px;
+    padding: 20px;
+    font-family: $font-family7;
+    &-title {
+      font-size: 40px;
+      font-weight: 500;
+      margin-bottom: 20px;
+    }
+    &-price {
+      font-size: 20px;
+      margin-bottom: 50px;
+      &::after {
+        content: '/ШТ';
+        font-size: 16px;
+        color: #434343;
+      }
+    }
+  }
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #000 !important;
 }
