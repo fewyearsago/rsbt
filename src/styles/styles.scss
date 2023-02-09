@@ -19,6 +19,11 @@ $color1: rgb(129, 185, 129);
   background-color: $color1;
 }
 
+html {
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 html,
 body {
   height: 100%;
