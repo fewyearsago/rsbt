@@ -15,9 +15,7 @@ const FullItem = () => {
   React.useEffect(() => {
     async function fetchItem() {
       try {
-        const { data } = await axios.get(
-          'https://63d67fe7e60d57436979ced9.mockapi.io/items/' + id,
-        );
+        const { data } = await axios.get('https://63d67fe7e60d57436979ced9.mockapi.io/items/' + id);
         setItem(data);
       } catch (error) {
         alert('Произошла ошибка');
@@ -35,6 +33,9 @@ const FullItem = () => {
         <div className="fullItem">
           <div className="fullItem__list">
             <Swiper
+              style={{
+                '--swiper-navigation-size': '30px',
+              }}
               modules={[Navigation]}
               spaceBetween={50}
               navigation={true}
@@ -54,10 +55,9 @@ const FullItem = () => {
                 <h1 className="fullItem__info-title">{item.title}</h1>
                 <p className="fullItem__info-price">{item.price}₽</p>
                 <p className="fullItem__info-desc">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
-                  neque debitis molestiae corrupti corporis accusantium cumque
-                  facere sit asperiores quam est libero necessitatibus nemo rem
-                  dolores hic consequatur, sapiente voluptas!
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet neque debitis
+                  molestiae corrupti corporis accusantium cumque facere sit asperiores quam est
+                  libero necessitatibus nemo rem dolores hic consequatur, sapiente voluptas!
                 </p>
                 <Link to={'/catalog'}>
                   <button className="fullItem__btn">Вернуться назад</button>
