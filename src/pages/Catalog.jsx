@@ -36,9 +36,9 @@ const Catalog = () => {
                   <FetchItem url={e.imageUrl} price={e.price} title={e.title} />
                 </Link>
               ))}
-              {/* <div className="catalog__content-large">
+              <div className="catalog__content-large">
                 <h1></h1>
-              </div> */}
+              </div>
             </div>
           </div>
         </div>

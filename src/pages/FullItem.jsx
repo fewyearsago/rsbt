@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { useParams, Link } from 'react-router-dom';
 import Menu from '../components/Menu';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper';
@@ -50,12 +50,15 @@ const FullItem = () => {
             <div className="fullItem__info">
               <h1 className="fullItem__info-title">{item.title}</h1>
               <p className="fullItem__info-price">{item.price}₽</p>
-              <p>
+              <p className="fullItem__info-desc">
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet
                 neque debitis molestiae corrupti corporis accusantium cumque
                 facere sit asperiores quam est libero necessitatibus nemo rem
                 dolores hic consequatur, sapiente voluptas!
               </p>
+              <Link to={'/catalog'}>
+                <button className="fullItem__btn">Вернуться назад</button>
+              </Link>
             </div>
           </div>
         </div>
