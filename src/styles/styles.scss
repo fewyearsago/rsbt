@@ -389,3 +389,48 @@ a {
 .swiper-button-prev {
   color: #000 !important;
 }
+
+.menu__btn {
+  display: none;
+}
+
+@media (max-width: 1072px) {
+  .logo {
+    font-size: 50px;
+  }
+  .logo-img {
+    max-width: 125px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 682px) {
+  .logo {
+    font-size: 40px;
+  }
+
+  .menu__list {
+    font-size: 13px;
+    &-item + &-item {
+      margin-left: 30px;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  .logo {
+    font-size: 26px;
+  }
+  .logo-store {
+    font-size: 18px;
+    margin-top: 38px;
+  }
+}
+
+@media (max-width: 390px) {
+  .menu__list {
+    &-item + &-item {
+      margin-left: 15px;
+    }
+  }
+}

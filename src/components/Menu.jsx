@@ -9,13 +9,21 @@ const Menu = () => {
     { name: 'о бренде', href: '/about' },
   ];
   return (
-    <ul className="menu__list">
-      {list.map((obj, i) => (
-        <NavLink key={i} to={obj.href} className="menu__list-item">
-          <li className="menu__list-link">{obj.name}</li>
-        </NavLink>
-      ))}
-    </ul>
+    <nav className="menu__nav">
+      <ul className="menu__list">
+        {list.map((obj, i) => (
+          <NavLink key={i} to={obj.href} className="menu__list-item">
+            <li className="menu__list-link">{obj.name}</li>
+          </NavLink>
+        ))}
+      </ul>
+      <button className="menu__btn">
+        <span className="menu__btn-line"></span>
+        <span className="menu__btn-line"></span>
+        <span className="menu__btn-line"></span>
+        <span className="menu__btn-line"></span>
+      </button>
+    </nav>
   );
 };
 
