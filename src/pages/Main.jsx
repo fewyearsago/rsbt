@@ -6,13 +6,13 @@ import Header from '../components/Header';
 
 const Index = () => {
   return (
-    <>
+    <div className="main-wrapper">
       <AnimatedPage>
         <Header />
       </AnimatedPage>
       <Content />
       <Footer />
-    </>
+    </div>
   );
 };
 
