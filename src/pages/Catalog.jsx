@@ -37,7 +37,9 @@ const Catalog = () => {
                 </Link>
               ))}
               <div className="catalog__content-large">
-                <h1></h1>
+                <a href="#" className="catalog__content-large-link">
+                  Заказать:
+                </a>
               </div>
             </div>
           </div>
