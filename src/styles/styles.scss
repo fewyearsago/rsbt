@@ -185,7 +185,7 @@ a {
     font-size: 24px;
     font-family: $font-family3;
     position: relative;
-    padding-top: 120px;
+    padding: 120px 50px 50px 50px;
   }
   &__inner::after {
     content: '';
@@ -413,6 +413,11 @@ a {
       height: 250px;
     }
   }
+  .about__inner::after {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+  }
 }
 
 @media (max-width: 762px) {
@@ -425,6 +430,15 @@ a {
     }
   }
 
+  .about__inner {
+    text-align: center;
+    padding: 120px 50px 0px 50px;
+    &::after {
+      left: 50%;
+      transform: translateX(-50%);
+      width: 40%;
+    }
+  }
   .content {
     padding: 50px;
   }
@@ -470,6 +484,17 @@ a {
   .content-wrapper-item {
     height: 200px;
     width: 130px;
+  }
+  .about {
+    &__text {
+      letter-spacing: 0;
+    }
+    &__inner {
+      font-size: 16px;
+      &::after {
+        width: 60%;
+      }
+    }
   }
 }
 
