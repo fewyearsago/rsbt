@@ -416,6 +416,8 @@ a {
   .about__inner::after {
     left: 50%;
     transform: translateX(-50%);
+    height: 87px;
+    bottom: -135px;
     width: 25%;
   }
 }
@@ -492,7 +494,7 @@ a {
     &__inner {
       font-size: 16px;
       &::after {
-        width: 60%;
+        width: 50%;
       }
     }
   }
