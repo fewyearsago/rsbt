@@ -480,6 +480,10 @@ a {
   .catalog__content-main {
     grid-template-columns: repeat(2, 1fr);
   }
+  .catalog__content-item-img {
+    object-position: center;
+    object-fit: cover;
+  }
 }
 
 @media (max-width: 682px) {
