@@ -9,9 +9,7 @@ const Catalog = () => {
   const [items, setItems] = React.useState();
   React.useEffect(() => {
     const fetchItems = async () => {
-      const { data } = await axios.get(
-        'https://63d67fe7e60d57436979ced9.mockapi.io/items',
-      );
+      const { data } = await axios.get('https://63d67fe7e60d57436979ced9.mockapi.io/items');
       setItems(data);
     };
     fetchItems();
@@ -36,11 +34,6 @@ const Catalog = () => {
                   <FetchItem url={e.imageUrl} price={e.price} title={e.title} />
                 </Link>
               ))}
-              <div className="catalog__content-large">
-                <a href="#" className="catalog__content-large-link">
-                  Заказать:
-                </a>
-              </div>
             </div>
           </div>
         </div>
