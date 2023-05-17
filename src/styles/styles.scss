@@ -486,6 +486,10 @@ a {
     row-gap: 35px;
     column-gap: 20px;
   }
+  .catalog__content-item {
+    max-width: 250px;
+    margin: 0 auto;
+  }
 }
 
 @media (max-width: 682px) {
