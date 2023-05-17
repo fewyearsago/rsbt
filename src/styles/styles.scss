@@ -635,6 +635,10 @@ a {
       grid-template-columns: repeat(1, 1fr);
       padding: 80px;
     }
+     &__content-item {
+      width: 180px;
+      margin: 0 auto;
+    }
   }
 
   .menu__list {
